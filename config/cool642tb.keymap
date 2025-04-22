@@ -100,10 +100,10 @@
 
         config_10key_layer {
             bindings = <
-&none       &none       &none         &none         &none                                         &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &kp KP_DIVIDE
-&none       &none       &none         &none         &none         &to 0           &kp TAB         &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &kp KP_ASTERISK
-&none       &none       &none         &none         &none         &none           &kp BACKSPACE   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT    &kp COMMA
-&bt BT_PRV  &bt BT_NXT  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR_ALL  &kp KP_NUMLOCK  &kp KP_NUMBER_0                                                  &kp KP_ENTER
+&bt BT_CLR_ALL    &none         &none         &none           &none                                  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &kp KP_DIVIDE
+&bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2  &none           &none      &to 0       &kp TAB         &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &kp KP_ASTERISK
+&bt BT_PRV        &bt BT_NXT    &none         &none           &none      &none       &kp BACKSPACE   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT    &kp COMMA
+&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp SPACE  &kp DELETE  &kp KP_NUMLOCK  &kp KP_NUMBER_0                                                  &kp KP_ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp K_VOLUME_UP K_VOLUME_DOWN>;
@@ -112,7 +112,7 @@
         auto_mouse_layer {
             bindings = <
 &mkp MB5          &none         &none         &none           &none                                 &none      &none     &none  &none     &mkp MB5
-&mkp MB3          &mkp MB2      &to 1         &mkp MB1        &none      &none       &none          &none      &mkp MB1  &to 1  &mkp MB2  &mkp MB3
+&mkp MB3          &mkp MB2      &none         &mkp MB1        &none      &none       &none          &none      &mkp MB1  &none  &mkp MB2  &mkp MB3
 &mkp MB4          &none         &none         &none           &none      &none       &none          &none      &none     &none  &none     &mkp MB4
 &kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp SPACE  &kp DELETE  &kp BACKSPACE  &kp ENTER                             &kp RIGHT_CONTROL
             >;
