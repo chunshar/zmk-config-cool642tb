@@ -84,7 +84,7 @@
 &kp F11       &kp F12       &kp F13       &kp LEFT_CONTROL  &trans   &kp LEFT_SHIFT  &kp RIGHT_SHIFT  &trans                                                         &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 
         symbol_layer {
@@ -105,8 +105,6 @@
 &bt BT_PRV        &bt BT_NXT    &none         &none           &none           &none       &kp BACKSPACE   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT    &kp COMMA
 &kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp SPACE       &kp DELETE  &kp KP_NUMLOCK  &kp KP_NUMBER_0                                                  &kp KP_ENTER
             >;
-
-            sensor-bindings = <&inc_dec_kp K_VOLUME_UP K_VOLUME_DOWN>;
         };
 
         auto_mouse_layer {
