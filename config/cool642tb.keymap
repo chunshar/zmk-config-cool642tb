@@ -10,7 +10,7 @@
 
 &mt {
     flavor = "tap-unless-interrupted";
-    quick-tap-ms = <0>;
+    quick-tap-ms = <125>;
 };
 
 / {
