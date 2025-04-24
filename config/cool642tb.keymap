@@ -4,13 +4,12 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define ZMK_POINTING_SCRL_VAL 100
-
 #define MOUSE 4
 #define SCROLL 5
 #define NUM 6
 
 &mt {
-    flavor = "balanced";
+    flavor = "tap-unless-interrupted";
     quick-tap-ms = <0>;
 };
 
@@ -68,6 +67,7 @@
             label = "SCROLL_UP_DOWN";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
             tap-ms = <20>;
         };
     };
