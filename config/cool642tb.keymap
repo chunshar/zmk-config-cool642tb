@@ -26,27 +26,32 @@
 
         comb1 {
             bindings = <&kp TAB>;
-            key-positions = <11 12>;
+            key-positions = <10 11>;
         };
 
         comb2 {
             bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
+            key-positions = <12 11>;
         };
 
         comb3 {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
         };
 
         comb4 {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
+            bindings = <&kp DELETE>;
+            key-positions = <8 9>;
         };
 
         comb5 {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
+            bindings = <&kp ENTER>;
+            key-positions = <20 21>;
+        };
+
+        comb6 {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <20 19>;
         };
     };
 
