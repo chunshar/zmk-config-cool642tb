@@ -128,7 +128,7 @@
 &bt BT_PRV     &bt BT_NXT     &none          &bt BT_CLR     &bt BT_CLR_ALL                      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &kp KP_DIVIDE
 &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4    &to 0   &trans      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &kp KP_ASTERISK
 &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4   &trans  &trans      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT    &kp COMMA
-&bootloader    &trans         &trans         &trans         &trans          &trans  &kp KP_NUM  &kp KP_NUMBER_0                                                  &kp KP_ENTER
+&trans         &trans         &trans         &trans         &trans          &trans  &kp KP_NUM  &kp KP_NUMBER_0                                                  &kp KP_ENTER
             >;
         };
 
@@ -148,7 +148,7 @@
 &kp ESCAPE      &none   &kp C_BRIGHTNESS_DEC  &none           &kp C_BRIGHTNESS_INC                          &kp PRINTSCREEN  &kp LG(LC(LEFT))  &kp LG(LC(D))  &kp LG(LC(RIGHT))  &kp LG(LC(F4))
 &kp CAPS        &none   &kp C_VOL_DN          &kp C_MUTE      &kp C_VOLUME_UP       &kp LG(ESCAPE)  &trans  &kp HOME         &kp PG_DN         &kp UP         &kp PG_UP          &kp RET
 &kp LEFT_SHIFT  &none   &kp LG(KP_MINUS)      &kp LG(ESCAPE)  &kp LG(KP_PLUS)       &trans          &trans  &kp END          &kp LEFT          &kp DOWN       &kp RIGHT          &kp RIGHT_SHIFT
-&trans          &trans  &trans                &trans          &trans                &trans          &trans  &trans                                                               &trans
+&bootloader     &trans  &trans                &trans          &trans                &trans          &trans  &trans                                                               &bootloader
             >;
 
             sensor-bindings = <&inc_dec_kp LG(KP_MINUS) LG(KP_PLUS)>;
