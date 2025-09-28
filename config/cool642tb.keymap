@@ -145,10 +145,10 @@
 
         auxiliary {
             bindings = <
-&kp ESCAPE      &none   &kp C_BRIGHTNESS_DEC  &none           &kp C_BRIGHTNESS_INC                          &kp PRINTSCREEN  &kp LG(LC(LEFT))  &kp LG(LC(D))  &kp LG(LC(RIGHT))  &kp LG(LC(F4))
-&kp CAPS        &none   &kp C_VOL_DN          &kp C_MUTE      &kp C_VOLUME_UP       &kp LG(ESCAPE)  &trans  &kp HOME         &kp PG_UP         &kp UP         &kp PAGE_DOWN      &kp RET
-&kp LEFT_SHIFT  &none   &kp LG(KP_MINUS)      &kp LG(ESCAPE)  &kp LG(KP_PLUS)       &trans          &trans  &kp END          &kp LEFT          &kp DOWN       &kp RIGHT          &kp RIGHT_SHIFT
-&bootloader     &trans  &trans                &trans          &trans                &trans          &trans  &trans                                                               &bootloader
+&kp ESCAPE   &none   &kp C_BRIGHTNESS_DEC  &none           &kp C_BRIGHTNESS_INC                          &kp PRINTSCREEN     &kp LG(LC(LEFT))  &kp LG(LC(D))  &kp LG(LC(RIGHT))  &kp LG(LC(F4))
+&kp CAPS     &none   &kp C_VOL_DN          &kp C_MUTE      &kp C_VOLUME_UP       &kp LG(ESCAPE)  &trans  &kp LS(LC(ESCAPE))  &kp LG(D)         &kp LG(UP)     &kp LG(E)          &kp RET
+&none        &none   &kp LG(KP_MINUS)      &kp LG(ESCAPE)  &kp LG(KP_PLUS)       &trans          &trans  &kp LC(LA(DELETE))  &kp LG(LEFT)      &kp LG(DOWN)   &kp LG(RIGHT)      &none
+&bootloader  &trans  &trans                &trans          &trans                &trans          &trans  &trans                                                                  &bootloader
             >;
 
             sensor-bindings = <&inc_dec_kp LG(KP_MINUS) LG(KP_PLUS)>;
