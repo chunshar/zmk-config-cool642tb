@@ -40,7 +40,7 @@
         };
 
         comb4 {
-            bindings = <&kp DELETE>;
+            bindings = <&kp BACKSPACE>;
             key-positions = <8 9>;
         };
 
@@ -50,13 +50,13 @@
         };
 
         comb6 {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <20 19>;
+            bindings = <&kp DELETE>;
+            key-positions = <7 8>;
         };
 
         scroll {
             bindings = <&mo 2>;
-            key-positions = <31 32>;
+            key-positions = <19 18>;
         };
     };
 
@@ -134,9 +134,9 @@
 
         auto_mouse_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                  &trans  &mkp MB4  &mkp MB5  &trans    &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans    &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4  &mkp MB5  &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                &trans
             >;
 
@@ -146,8 +146,8 @@
         auxiliary {
             bindings = <
 &kp ESCAPE   &none   &kp C_BRIGHTNESS_DEC  &none           &kp C_BRIGHTNESS_INC                          &kp PRINTSCREEN     &kp LG(LC(LEFT))  &kp LG(LC(D))  &kp LG(LC(RIGHT))  &kp LG(LC(F4))
-&kp CAPS     &none   &kp C_VOL_DN          &kp C_MUTE      &kp C_VOLUME_UP       &kp LG(ESCAPE)  &trans  &kp LS(LC(ESCAPE))  &kp LG(D)         &kp LG(UP)     &kp LG(E)          &kp RET
-&none        &none   &kp LG(KP_MINUS)      &kp LG(ESCAPE)  &kp LG(KP_PLUS)       &trans          &trans  &kp LC(LA(DELETE))  &kp LG(LEFT)      &kp LG(DOWN)   &kp LG(RIGHT)      &none
+&kp TAB      &none   &kp C_VOL_DN          &kp C_MUTE      &kp C_VOLUME_UP       &kp LG(ESCAPE)  &trans  &kp LS(LC(ESCAPE))  &kp LG(D)         &kp LG(UP)     &kp LG(E)          &kp RET
+&kp LSHIFT   &none   &kp LG(KP_MINUS)      &kp LG(ESCAPE)  &kp LG(KP_PLUS)       &trans          &trans  &kp LC(LA(DELETE))  &kp LG(LEFT)      &kp LG(DOWN)   &kp LG(RIGHT)      &kp RSHIFT
 &bootloader  &trans  &trans                &trans          &trans                &trans          &trans  &trans                                                                  &bootloader
             >;
 
