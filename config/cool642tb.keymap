@@ -24,39 +24,49 @@
     combos {
         compatible = "zmk,combos";
 
-        comb1 {
+        tab {
             bindings = <&kp TAB>;
             key-positions = <10 11>;
         };
 
-        comb2 {
+        s+tab {
             bindings = <&kp LS(TAB)>;
-            key-positions = <12 11>;
+            key-positions = <22 23>;
         };
 
-        comb3 {
+        esc {
             bindings = <&kp ESC>;
             key-positions = <0 1>;
         };
 
-        comb4 {
+        bs {
             bindings = <&kp BACKSPACE>;
             key-positions = <8 9>;
         };
 
-        comb5 {
+        enter {
             bindings = <&kp ENTER>;
             key-positions = <20 21>;
         };
 
-        comb6 {
+        del {
             bindings = <&kp DELETE>;
             key-positions = <7 8>;
         };
 
         scroll {
             bindings = <&mo 2>;
-            key-positions = <19 18>;
+            key-positions = <19 20>;
+        };
+
+        lang2 {
+            bindings = <&kp LANGUAGE_2>;
+            key-positions = <13 12>;
+        };
+
+        lang1 {
+            bindings = <&kp LANGUAGE_1>;
+            key-positions = <18 19>;
         };
     };
 
@@ -92,10 +102,10 @@
 
         default_layer {
             bindings = <
-&kp Q         &kp W         &kp E         &kp R             &kp T                                                       &kp Y        &kp U  &kp I      &kp O       &kp P
-&kp A         &kp S         &kp D         &kp F             &kp G        &to 3             &kp DELETE                   &kp H        &kp J  &kp K      &kp L       &lt 4 SEMICOLON
-&mt LSHIFT Z  &kp X         &kp C         &kp V             &kp B        &kp ESCAPE        &kp CAPS                     &kp N        &kp M  &kp COMMA  &kp PERIOD  &mt RSHFT SLASH
-&kp LCTRL     &kp LEFT_WIN  &kp LEFT_ALT  &mt LSHIFT LANG2  &lt 1 SPACE  &lt 5 LANGUAGE_1  &mt RIGHT_CONTROL BACKSPACE  &lt 2 ENTER                                &kp RGUI
+&kp Q         &kp W         &kp E         &kp R              &kp T                                                 &kp Y        &kp U  &kp I      &kp O       &kp P
+&kp A         &kp S         &kp D         &kp F              &kp G        &to 3       &kp DELETE                   &kp H        &kp J  &kp K      &kp L       &lt 4 SEMICOLON
+&mt LSHIFT Z  &kp X         &kp C         &kp V              &kp B        &kp ESCAPE  &kp CAPS                     &kp N        &kp M  &kp COMMA  &kp PERIOD  &mt RSHFT SLASH
+&kp LCTRL     &kp LEFT_WIN  &kp LEFT_ALT  &mt LSHIFT ESCAPE  &lt 1 SPACE  &lt 5 TAB   &mt RIGHT_CONTROL BACKSPACE  &lt 2 ENTER                                &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
@@ -127,7 +137,7 @@
             bindings = <
 &bt BT_PRV     &bt BT_NXT     &none          &bt BT_CLR     &bt BT_CLR_ALL                          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &kp KP_DIVIDE
 &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4    &to 0   &trans          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &kp KP_ASTERISK
-&bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4   &trans  &kp KP_NUMLOCK  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT    &kp COMMA
+&bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4   &trans  &kp KP_NUMLOCK  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT    &mt RSHFT COMMA
 &trans         &trans         &trans         &trans         &trans          &trans  &trans          &kp KP_NUMBER_0                                                  &kp KP_ENTER
             >;
         };
