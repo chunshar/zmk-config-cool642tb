@@ -33,6 +33,7 @@
             cw-binding = <&kp C_VOL_UP>;
             ccw-binding = <&kp C_VOL_DN>;
         };
+    };
 
     combos {
         compatible = "zmk,combos";
