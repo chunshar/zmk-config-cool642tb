@@ -1,3 +1,4 @@
+#include <behaviors/battery_history_request.dtsi>
 #include "cool642tb.dtsi"
 
 &kscan0 {
