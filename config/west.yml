@@ -15,12 +15,6 @@ manifest:
       remote: cormoran
       revision: v0.3-branch+dya
       import: app/west.yml
-    - name: zmk-pmw3610-driver
-      remote: telzo2000
-      revision: main
-    - name: zmk-rgbled-widget
-      remote: caksoylar
-      revision: main
     - name: zmk-module-ble-management
       remote: cormoran
       revision: main
@@ -35,6 +29,12 @@ manifest:
       revision: main
     - name: zmk-behavior-runtime-sensor-rotate
       remote: cormoran
+      revision: main
+    - name: zmk-pmw3610-driver
+      remote: telzo2000
+      revision: main
+    - name: zmk-rgbled-widget
+      remote: caksoylar
       revision: main
   self:
     path: config
