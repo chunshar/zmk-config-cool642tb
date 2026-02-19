@@ -95,7 +95,7 @@
 &kp LCTRL     &kp LEFT_WIN  &kp LEFT_ALT  &mt LSHIFT ESCAPE  &lt 2 SPACE  &lt 5 TAB   &mt RIGHT_CONTROL BACKSPACE  &lt 1 ENTER                                &kp RGUI
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         num_fn_layer {
@@ -106,7 +106,7 @@
 &trans         &trans        &trans        &trans        &trans   &trans      &trans  &trans                                                &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         symbol_scroll_layer {
@@ -117,7 +117,7 @@
 &trans                  &trans       &trans     &trans         &trans             &trans  &trans            &trans                                                                 &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_DEC C_BRIGHTNESS_INC>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         bt_10key_layer {
@@ -137,7 +137,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         auxiliary {
@@ -148,7 +148,7 @@
 &bootloader  &trans  &trans                &trans          &trans                &trans          &trans  &trans                                                                  &bootloader
             >;
 
-            sensor-bindings = <&inc_dec_kp LG(KP_MINUS) LG(KP_PLUS)>;
+            sensor-bindings = <&scroll_up_down>;
         };
     };
 };
